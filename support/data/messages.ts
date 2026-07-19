@@ -11,4 +11,11 @@ export const Messages = {
   AUTH: {
     UNSUPPORTED_ROLE: (role: string) => `Роль ${role} не поддерживается для авторизации`,
   },
+  DIRECTORY: {
+    INVALID_RECORDS_COUNTER: (text: string) => `Не удалось получить количество записей из счётчика: "${text}"`,
+    EMPLOYEE_CARDS_DID_NOT_LOAD: (previousCount: number) =>
+      `Количество карточек сотрудников должно увеличиться после прокрутки (текущее количество: ${previousCount})`,
+    EMPLOYEE_CARDS_COUNT_MISMATCH: (expected: number) =>
+      `Количество карточек сотрудников должно совпадать со счётчиком записей (${expected})`,
+  },
 } as const;
