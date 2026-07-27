@@ -8,4 +8,9 @@ export const Links = {
   DASHBOARD_PATH: getRuntimeString('ORANGEHRM_DASHBOARD_PATH', '/web/index.php/dashboard/index'),
   ADMIN_USERS_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_ADMIN_USERS_PATH', '/web/index.php/admin/viewSystemUsers')}`,
   ADMIN_USERS_API_PATH: getRuntimeString('ORANGEHRM_ADMIN_USERS_API_PATH', '/web/index.php/api/v2/admin/users'),
+  DIRECTORY_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_DIRECTORY_PATH', '/web/index.php/directory/viewDirectory')}`,
+  DIRECTORY_EMPLOYEES_API_PATH: getRuntimeString(
+    'ORANGEHRM_DIRECTORY_EMPLOYEES_API_PATH',
+    '/web/index.php/api/v2/directory/employees',
+  ),
 } as const;

@@ -10,6 +10,9 @@ export const UiText = {
     SEARCHING_OPTION_PATTERN: /Searching/i,
     RECORDS_COUNTER_PATTERN: /Record Found|Records Found|No Records Found/,
   },
+  DIRECTORY: {
+    RECORDS_COUNTER_PATTERN: /\(\d+\)\s+Records? Found/,
+  },
 } as const;
 
 export const UiSelectors = {
@@ -26,6 +29,10 @@ export const UiSelectors = {
     TABLE_ROWS: '.oxd-table-body .oxd-table-card .oxd-table-row',
     TABLE_CELL: '.oxd-table-cell',
     RECORDS_COUNTER_CONTAINER: '.orangehrm-horizontal-padding',
+    LOADING_SPINNER: '.oxd-loading-spinner',
+  },
+  DIRECTORY: {
+    EMPLOYEE_CARDS: '.orangehrm-directory-card',
     LOADING_SPINNER: '.oxd-loading-spinner',
   },
 } as const;
