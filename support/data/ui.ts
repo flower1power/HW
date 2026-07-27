@@ -10,6 +10,10 @@ export const UiText = {
     SEARCHING_OPTION_PATTERN: /Searching/i,
     RECORDS_COUNTER_PATTERN: /Record Found|Records Found|No Records Found/,
   },
+  BUZZ: {
+    COMMENT_COUNT_PATTERN: /^\d+ Comments?$/,
+    MOST_COMMENTED_POSTS_BUTTON: 'Most Commented Posts',
+  },
   DIRECTORY: {
     RECORDS_COUNTER_PATTERN: /\(\d+\)\s+Records? Found/,
   },
@@ -32,6 +36,10 @@ export const UiSelectors = {
     TABLE_ROWS: '.oxd-table-body .oxd-table-card .oxd-table-row',
     TABLE_CELL: '.oxd-table-cell',
     RECORDS_COUNTER_CONTAINER: '.orangehrm-horizontal-padding',
+    LOADING_SPINNER: '.oxd-loading-spinner',
+  },
+  BUZZ: {
+    COMMENT_COUNTS: '.orangehrm-buzz-post-footer .orangehrm-buzz-stats-active',
     LOADING_SPINNER: '.oxd-loading-spinner',
   },
   DIRECTORY: {
