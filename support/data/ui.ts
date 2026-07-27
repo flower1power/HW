@@ -16,6 +16,9 @@ export const UiText = {
 } as const;
 
 export const UiSelectors = {
+  HACKER_NEWS: {
+    STORY_AGE: '.age[title]',
+  },
   LOGIN: {
     USERNAME_FIELD: 'input[name="username"]',
     PASSWORD_FIELD: 'input[name="password"]',

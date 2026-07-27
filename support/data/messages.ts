@@ -1,4 +1,8 @@
 export const Messages = {
+  HACKER_NEWS: {
+    INVALID_STORY_TIMESTAMP: (value: string | null) => `Не удалось получить Unix timestamp новости из атрибута title: "${value}"`,
+    STORIES_ARE_NOT_SORTED: 'Первые новости должны быть отсортированы от новых к старым',
+  },
   ADMIN_USERS: {
     NO_EMPLOYEE_NAMES_IN_TABLE: 'В таблице должен быть хотя бы один Employee Name',
     NO_SEARCHABLE_EMPLOYEE_NAME: (attemptedNames: string[]) =>
