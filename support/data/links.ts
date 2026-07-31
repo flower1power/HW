@@ -7,6 +7,11 @@ export const Links = {
   HACKER_NEWS_NEWEST_PAGE: getRuntimeString('HACKER_NEWS_NEWEST_URL', 'https://news.ycombinator.com/newest'),
   LOGIN_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_LOGIN_PATH', '/web/index.php/auth/login')}`,
   DASHBOARD_PATH: getRuntimeString('ORANGEHRM_DASHBOARD_PATH', '/web/index.php/dashboard/index'),
+  DASHBOARD_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_DASHBOARD_PATH', '/web/index.php/dashboard/index')}`,
+  DASHBOARD_TIME_AT_WORK_API_PATH: getRuntimeString(
+    'ORANGEHRM_DASHBOARD_TIME_AT_WORK_API_PATH',
+    '/web/index.php/api/v2/dashboard/employees/time-at-work',
+  ),
   ADMIN_USERS_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_ADMIN_USERS_PATH', '/web/index.php/admin/viewSystemUsers')}`,
   ADMIN_USERS_API_PATH: getRuntimeString('ORANGEHRM_ADMIN_USERS_API_PATH', '/web/index.php/api/v2/admin/users'),
   BUZZ_PAGE: `${BASE_URL}${getRuntimeString('ORANGEHRM_BUZZ_PATH', '/web/index.php/buzz/viewBuzz')}`,

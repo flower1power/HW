@@ -1,4 +1,7 @@
 export const UiText = {
+  DASHBOARD: {
+    TIME_AT_WORK_WIDGET: 'Time at Work',
+  },
   LOGIN: {
     USERNAME_FIELD: 'Username',
     PASSWORD_FIELD: 'Password',
@@ -28,6 +31,11 @@ export const UiSelectors = {
     PASSWORD_FIELD: 'input[name="password"]',
     LOGIN_BUTTON: 'button[type="submit"]',
   },
+  DASHBOARD: {
+    GRID_ITEMS: '.orangehrm-dashboard-grid > .oxd-grid-item',
+    WEEKLY_ATTENDANCE_CHART: '.emp-attendance-chart canvas',
+    WIDGET_TITLE: '.orangehrm-dashboard-widget-name',
+  },
   ADMIN_USERS: {
     EMPLOYEE_NAME_FIELD: 'input[placeholder="Type for hints..."]',
     EMPLOYEE_NAME_OPTIONS_LIST: '.oxd-autocomplete-dropdown',
@@ -51,6 +59,12 @@ export const UiSelectors = {
 export const UiTableColumns = {
   ADMIN_USERS: {
     EMPLOYEE_NAME: 3,
+  },
+} as const;
+
+export const UiExpectedCounts = {
+  DASHBOARD: {
+    TIME_AT_WORK_CHART_COLUMNS: 7,
   },
 } as const;
 

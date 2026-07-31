@@ -19,9 +19,11 @@
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
+    "@typescript/native": "npm:typescript@^7.0.2",
+    "dotenv": "^17.2.3",
     "eslint": "^10.6.0",
     "prettier": "^3.9.4",
-    "typescript-eslint": "^8.63.0",
-    "dotenv": "^17.2.3"
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "typescript-eslint": "^8.63.0"
   }
 }
