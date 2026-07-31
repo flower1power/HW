@@ -1,4 +1,5 @@
 import { type BrowserContext, test as base } from '@playwright/test';
+import { HackerNewsNewestPage } from '../pages/hacker-news-newest.page';
 import { LoginPage } from '../pages/login.page';
 import { Role } from '../data/role';
 import { AdminRole } from '../role/admin';
@@ -6,6 +7,7 @@ import { UserRole } from '../role/user';
 
 type PagesFixture = {
   admin: AdminRole;
+  hackerNewsNewestPage: HackerNewsNewestPage;
   user: UserRole;
 };
 
@@ -16,6 +18,9 @@ type AuthenticatedAdminWorkerFixture = {
 export const test = base.extend<PagesFixture>({
   admin: async ({ page }, use) => {
     await use(new AdminRole(page));
+  },
+  hackerNewsNewestPage: async ({ page }, use) => {
+    await use(new HackerNewsNewestPage(page));
   },
   user: async ({ page }, use) => {
     await use(new UserRole(page));
