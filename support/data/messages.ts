@@ -1,4 +1,11 @@
 export const Messages = {
+  DASHBOARD: {
+    TIME_AT_WORK_API_FAILED: (status: number, url: string) =>
+      `Запрос данных виджета Time at Work завершился с HTTP ${status}: ${url}`,
+    INVALID_TIME_AT_WORK_RESPONSE: 'Ответ виджета Time at Work должен содержать массив data',
+    WEEKLY_CHART_COLUMN_COUNT_MISMATCH: (expected: number) =>
+      `В UI диаграммы Time at Work должно быть отрисовано ${expected} столбцов`,
+  },
   HACKER_NEWS: {
     INVALID_STORY_TIMESTAMP: (value: string | null) => `Не удалось получить Unix timestamp новости из атрибута title: "${value}"`,
     STORIES_ARE_NOT_SORTED: 'Первые новости должны быть отсортированы от новых к старым',
